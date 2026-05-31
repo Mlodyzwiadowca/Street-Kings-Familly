@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Street Kings | MajesticRP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Barlow+Condensed:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- SPLASH SCREEN -->
+<div id="splash">
+  <div class="splash-bg"></div>
+  <div class="splash-content">
+    <div class="splash-tag">MajesticRP &bull; Los Santos</div>
+    <div class="splash-logo">Street<span>Kings</span></div>
+    <div class="splash-sub">Nie ekipa &mdash; rodzina.</div>
+    <button class="splash-btn" id="splash-enter">
+      <span class="splash-btn-text">Wejdź</span>
+      <div class="splash-btn-line"></div>
+    </button>
+    <div class="splash-hint">kliknij aby wejść</div>
+  </div>
+</div>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+
+<nav id="navbar">
+  <a href="#" class="nav-logo">Street<span>Kings</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">O nas</a></li>
+    <li><a href="#gallery">Galeria</a></li>
+    <li><a href="#regulamin">Regulamin</a></li>
+    <li><a href="#rangi">Rangi</a></li>
+    <li><a href="#kontakt">Linki</a></li>
+  </ul>
+  <a href="https://discord.gg/hH3PXVzeb" class="nav-discord" target="_blank">Discord ↗</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-img-placeholder">
+    <img src="hero-bg.jpg" alt="" onerror="this.style.display='none'">
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-tag">MajesticRP &bull; Los Santos</div>
+    <h1 class="hero-title">
+      Street
+      <span class="gold">Kings</span>
+    </h1>
+    <p class="hero-sub">Nie ekipa &mdash; rodzina. Szanuj albo odejdź.</p>
+    <div class="hero-ctas">
+      <a href="https://discord.gg/hH3PXVzeb" class="btn-primary" target="_blank">Dołącz do Discorda</a>
+      <a href="#about" class="btn-outline">Poznaj nas</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- DISCORD BANNER -->
+<div id="discord-banner">
+  <div class="container">
+    <div class="discord-inner">
+      <div class="discord-text">
+        <h2>Dołącz do naszego <span>Discorda</span></h2>
+        <p>Bądź na bieżąco z akcjami, wydarzeniami i wewnętrznymi sprawami rodziny.</p>
+      </div>
+      <div class="discord-icon">
+        <div class="discord-logo">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+          </svg>
+        </div>
+        <a href="https://discord.gg/hH3PXVzeb" class="btn-primary" target="_blank">Wejdź na Discorda</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <div class="about-corner"></div>
+        <div class="about-corner-br"></div>
+        <div class="about-img">
+          <img src="logo3.webp" alt="Street Kings" onerror="this.style.display='none'">
+          <div class="about-img-placeholder-inner" id="about-placeholder">
+            <span>ZDJĘCIE</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-text reveal reveal-delay-2">
+        <div class="section-tag">Kim jesteśmy</div>
+        <h2 class="section-title">Street <span>Kings</span></h2>
+        <div class="divider"><div class="divider-line"></div><div class="divider-diamond"></div></div>
+        <p>Jesteśmy rodziną działającą na serwerze <strong>MajesticRP</strong> &mdash; grupą ludzi, którzy rozumieją, że prawdziwa siła tkwi w jedności i wzajemnym szacunku.</p>
+        <p>Street Kings to nie tylko ekipa na serwerze. To ludzie, którym możesz zaufać, na których możesz liczyć, i którzy zawsze mają Twoje plecy &mdash; zarówno podczas akcji, jak i poza nimi.</p>
+        <p>Na czele stoi nasz lider &mdash; <strong>Manny Kings</strong> &mdash; którego decyzje są ostateczne, a autorytet niepodważalny. Razem budujemy coś, czego nie da się zniszczyć.</p>
+        <div class="about-stats">
+          <div class="stat">
+            <div class="stat-num" id="counter-members">0</div>
+            <div class="stat-label">Członków</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" id="counter-ranks">11</div>
+            <div class="stat-label">Rang</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" id="counter-actions">0</div>
+            <div class="stat-label">Akcji</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-tag">Galeria</div>
+      <h2 class="section-title">Nasze <span>Chwile</span></h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item reveal">
+        <img src="logo.webp" alt="" onerror="this.style.display='none'">
+        <div class="gallery-placeholder"><span>ZDJĘCIE 1</span></div>
+        <div class="gallery-overlay"><span class="gallery-overlay-text">Akcja zespołowa</span></div>
+        <div class="gallery-line"></div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-1">
+        <img src="2.webp" alt="" onerror="this.style.display='none'">
+        <div class="gallery-placeholder"><span>ZDJĘCIE 2</span></div>
+        <div class="gallery-overlay"><span class="gallery-overlay-text">Street Kings</span></div>
+        <div class="gallery-line"></div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-2">
+        <img src="image.webp" alt="" onerror="this.style.display='none'">
+        <div class="gallery-placeholder"><span>ZDJĘCIE 3</span></div>
+        <div class="gallery-overlay"><span class="gallery-overlay-text">Ekipa</span></div>
+        <div class="gallery-line"></div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-1">
+        <img src="image2.webp" alt="" onerror="this.style.display='none'">
+        <div class="gallery-placeholder"><span>ZDJĘCIE 4</span></div>
+        <div class="gallery-overlay"><span class="gallery-overlay-text">MajesticRP</span></div>
+        <div class="gallery-line"></div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-2">
+        <img src="image3.webp" alt="" onerror="this.style.display='none'">
+        <div class="gallery-placeholder"><span>ZDJĘCIE 5</span></div>
+        <div class="gallery-overlay"><span class="gallery-overlay-text">Rodzina</span></div>
+        <div class="gallery-line"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REGULAMIN -->
+<section id="regulamin">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-tag">Zasady</div>
+      <h2 class="section-title">Regu<span>lamin</span></h2>
+      <p class="reg-intro">Dołączając do Street Kings akceptujesz poniższe zasady i zobowiązujesz się do ich bezwzględnego przestrzegania. Nieznajomość regulaminu nie zwalnia z odpowiedzialności.</p>
+    </div>
+    <div class="reg-grid">
+
+      <div class="reg-section reveal reveal-delay-1">
+        <div class="reg-section-num">01</div>
+        <div class="reg-section-title">§1 Zasady Ogólne</div>
+        <ul class="reg-list">
+          <li>Dołączając do rodzinki, akceptujesz ten regulamin i zobowiązujesz się do jego przestrzegania.</li>
+          <li>Okazuj szacunek wobec każdego członka i graczy poza nią. Nie tolerujemy toksycznych zachowań, prowokacji ani wyzywania.</li>
+          <li>Każdy członek reprezentuje rodzinkę &ndash; dbaj o jej wizerunek zarówno na serwerze, jak i na Discordzie.</li>
+          <li><strong>Zakaz</strong> reklamowania innych organizacji bez zgody lidera.</li>
+          <li>Nie udostępniaj informacji dotyczących wewnętrznych spraw rodzinki osobom spoza ekipy.</li>
+        </ul>
+      </div>
+
+      <div class="reg-section reveal reveal-delay-2">
+        <div class="reg-section-num">02</div>
+        <div class="reg-section-title">§2 Zasady Współpracy</div>
+        <ul class="reg-list">
+          <li>Wspieraj innych członków, pomagaj nowym i współpracuj podczas akcji.</li>
+          <li>W przypadku konfliktu &ndash; zgłaszaj sprawę do wyższej rangi, nie rozwiązuj jej sam agresywnie.</li>
+          <li><strong>Zakaz</strong> samowolnych akcji mogących zaszkodzić reputacji rodzinki (RDM, VDM, trolling, wycieki informacji).</li>
+          <li>Słuchaj dowódców i lidera &ndash; ich decyzje są ostateczne.</li>
+        </ul>
+      </div>
+
+      <div class="reg-section reveal reveal-delay-1">
+        <div class="reg-section-num">03</div>
+        <div class="reg-section-title">§3 Finanse i Majątek</div>
+        <ul class="reg-list">
+          <li><strong>Zakaz</strong> przechowywania lub pożyczania pieniędzy u/od lidera Manny Kings.</li>
+          <li>Tylko osoby posiadające <strong>11 rangę</strong> mogą prosić lidera o wsparcie finansowe lub przekazanie środków.</li>
+          <li>Wspólne środki mają być używane zgodnie z decyzją zarządu rodzinki.</li>
+          <li><strong>Zakaz</strong> okradania członków rodzinki lub nadużywania ich zaufania.</li>
+        </ul>
+      </div>
+
+      <div class="reg-section reveal reveal-delay-2">
+        <div class="reg-section-num">04</div>
+        <div class="reg-section-title">§4 Kary</div>
+        <ul class="reg-list">
+          <li>Złamanie zasad skutkuje: <strong>ostrzeżeniem</strong>, degradacją, czasowym zawieszeniem lub wyrzuceniem &ndash; w zależności od skali przewinienia.</li>
+          <li>Decyzję o karze podejmuje lider lub wysoka ranga po zapoznaniu się ze sprawą.</li>
+        </ul>
+      </div>
+
+      <div class="reg-section reg-full reveal">
+        <div class="reg-section-num">05</div>
+        <div class="reg-section-title">§5 Postanowienia Końcowe</div>
+        <ul class="reg-list">
+          <li>Regulamin może ulec zmianie &ndash; każdy członek ma obowiązek znać jego aktualną wersję.</li>
+          <li>Nieznajomość regulaminu nie zwalnia z odpowiedzialności.</li>
+          <li>Rodzinka to nie tylko ekipa &ndash; to <strong>rodzina</strong>. Traktujmy się z szacunkiem i lojalnością.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- RANGI -->
+<section id="rangi">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-tag">Hierarchia</div>
+      <h2 class="section-title">Sys<span>tem Rang</span></h2>
+    </div>
+    <div class="ranks-list">
+
+      <div class="rank-accordion reveal">
+        <div class="rank-header">
+          <div class="rank-num">11</div>
+          <div class="rank-name">Lider</div>
+          <div class="rank-badge leader">Lider</div>
+          <div class="rank-arrow"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div>
+        </div>
+        <div class="rank-body">
+          <div class="rank-body-inner">
+            <div class="rank-members-label">Członkowie</div>
+            <div class="rank-members-list">
+              <span class="rank-member-tag">Manny Kings</span>
+              <span class="rank-member-tag">Leo Kings</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rank-accordion reveal">
+        <div class="rank-header">
+          <div class="rank-num">10</div>
+          <div class="rank-name">Zastępca Lidera</div>
+          <div class="rank-badge">Zarząd</div>
+          <div class="rank-arrow"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div>
+        </div>
+        <div class="rank-body">
+          <div class="rank-body-inner">
+            <div class="rank-members-label">Członkowie</div>
+            <div class="rank-members-list">
+              <span class="rank-member-tag">John Kings</span>
+              <span class="rank-member-tag">Koczus Kings</span>
+              <span class="rank-member-tag">Barbie Frugo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rank-accordion reveal">
+        <div class="rank-header">
+          <div class="rank-num">9</div>
+          <div class="rank-name">Starszy Generał</div>
+          <div class="rank-badge">Wyższa Ranga</div>
+          <div class="rank-arrow"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div>
+        </div>
+        <div class="rank-body">
+          <div class="rank-body-inner">
+            <div class="rank-members-label">Członkowie</div>
+            <div class="rank-members-list">
+              <span class="rank-empty">Brak członków na tej randze</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rank-accordion reveal">
+        <div class="rank-header">
+          <div class="rank-num">8</div>
+          <div class="rank-name">Młodszy Generał</div>
+          <div class="rank-badge">Wyższa Ranga</div>
+          <div class="rank-arrow"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div>
+        </div>
+        <div class="rank-body">
+          <div class="rank-body-inner">
+            <div class="rank-members-label">Członkowie</div>
+            <div class="rank-members-list">
+              <span class="rank-empty">Brak członków na tej randze</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rank-accordion reveal">
+        <div class="rank-header">
+          <div class="rank-num">7</div>
+          <div class="rank-name">Starszy Kapitan</div>
+          <div class="rank-badge">Kapitan</div>
+          <div class="rank-arrow"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div>
+        </div>
+        <div class="rank-body">
+          <div class="rank-body-inner">
+            <div class="rank-members-label">Członkowie</div>
+            <div class="rank-members-list">
+              <span class="rank-member-tag">Jack Kings</span>
+              <span class="rank-member-tag">Omezo Kings</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rank-accordion reveal">
+        <div class="rank-header">
+          <div class="rank-num">6</div>
+          <div class="rank-name">Młodszy Kapitan</div>
+          <div class="rank-badge">Kapitan</div>
+          <div class="rank-arrow"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div>
+        </div>
+        <div class="rank-body">
+          <div class="rank-body-inner">
+            <div class="rank-members-label">Członkowie</div>
+            <div class="rank-members-list">
+              <span class="rank-empty">Brak członków na tej randze</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rank-accordion reveal">
+        <div class="rank-header">
+          <div class="rank-num">5</div>
+          <div class="rank-name">Starszy Członek</div>
+          <div class="rank-badge">Doświadczony</div>
+          <div class="rank-arrow"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div>
+        </div>
+        <div class="rank-body">
+          <div class="rank-body-inner">
+            <div class="rank-members-label">Członkowie</div>
+            <div class="rank-members-list">
+              <span class="rank-member-tag">Lukas Tworki</span>
+              <span class="rank-member-tag">Ralph Kings</span>
+              <span class="rank-member-tag">Robert Sliwka</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rank-accordion reveal">
+        <div class="rank-header">
+          <div class="rank-num">4</div>
+          <div class="rank-name">Młody Członek</div>
+          <div class="rank-badge">Członek</div>
+          <div class="rank-arrow"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div>
+        </div>
+        <div class="rank-body">
+          <div class="rank-body-inner">
+            <div class="rank-members-label">Członkowie</div>
+            <div class="rank-members-list">
+              <span class="rank-member-tag">Carl Hinter</span>
+              <span class="rank-member-tag">Henry Mann</span>
+              <span class="rank-member-tag">Jack Valentines</span>
+              <span class="rank-member-tag">Taymor Williams</span>
+              <span class="rank-member-tag">Thomas Therry</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rank-accordion reveal">
+        <div class="rank-header">
+          <div class="rank-num">3</div>
+          <div class="rank-name">Sponsor</div>
+          <div class="rank-badge">Wsparcie</div>
+          <div class="rank-arrow"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div>
+        </div>
+        <div class="rank-body">
+          <div class="rank-body-inner">
+            <div class="rank-members-label">Członkowie</div>
+            <div class="rank-members-list">
+              <span class="rank-member-tag">Johny Kings</span>
+              <span class="rank-member-tag">Lucyfer Kings</span>
+              <span class="rank-member-tag">Xaw Silence</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rank-accordion reveal">
+        <div class="rank-header">
+          <div class="rank-num">2</div>
+          <div class="rank-name">Rekrut</div>
+          <div class="rank-badge">Nowy</div>
+          <div class="rank-arrow"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div>
+        </div>
+        <div class="rank-body">
+          <div class="rank-body-inner">
+            <div class="rank-members-label">Członkowie</div>
+            <div class="rank-members-list">
+              <span class="rank-member-tag">Tomcio</span>
+              <span class="rank-member-tag">Chris Frixon</span>
+              <span class="rank-member-tag">David French</span>
+              <span class="rank-member-tag">Fernando Martini</span>
+              <span class="rank-member-tag">Johny Winchester</span>
+              <span class="rank-member-tag">Leun Kings</span>
+              <span class="rank-member-tag">Micheal Ruiz</span>
+              <span class="rank-member-tag">Noah Maxwell</span>
+              <span class="rank-member-tag">Relaksoronqu Xmaciks</span>
+              <span class="rank-member-tag">Robson Hunter</span>
+              <span class="rank-member-tag">Szponcik</span>
+              <span class="rank-member-tag">Tomson Escuelaa</span>
+              <span class="rank-member-tag">Freddy Flintstone</span>
+              <span class="rank-member-tag">Lan Kaneweay</span>
+              <span class="rank-member-tag">Zbychu Cwaniaczek</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rank-accordion reveal">
+        <div class="rank-header">
+          <div class="rank-num">1</div>
+          <div class="rank-name">Kandydat</div>
+          <div class="rank-badge">Na próbie</div>
+          <div class="rank-arrow"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div>
+        </div>
+        <div class="rank-body">
+          <div class="rank-body-inner">
+            <div class="rank-members-label">Członkowie</div>
+            <div class="rank-members-list">
+              <span class="rank-member-tag">Sean Horton</span>
+              <span class="rank-member-tag">Stanley Xmaciks</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- KONTAKT / LINKI -->
+<section id="kontakt">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-tag">Linki</div>
+      <h2 class="section-title">Znajdź <span>Nas</span></h2>
+    </div>
+    <div class="links-grid">
+      <a href="https://discord.gg/hH3PXVzeb" class="link-card reveal" target="_blank">
+        <div class="link-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+        </div>
+        <div class="link-card-title">Discord</div>
+        <div class="link-card-desc">Główna komunikacja rodziny. Dołącz i bądź częścią ekipy.</div>
+        <div class="link-card-arrow">Wejdź →</div>
+      </a>
+
+      <a href="https://www.tiktok.com/@manny901123?lang=pl-PL" class="link-card reveal reveal-delay-1" target="_blank">
+        <div class="link-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
+        </div>
+        <div class="link-card-title">TikTok Manny</div>
+        <div class="link-card-desc">TikTok Naszego Lidera Manny Kings.</div>
+        <div class="link-card-arrow">Wejdź →</div>
+      </a>
+
+      <a href="https://www.tiktok.com/@barbie.frugo?_r=1&_t=ZN-96olm5NERNv" class="link-card reveal reveal-delay-2" target="_blank">
+        <div class="link-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
+        </div>
+        <div class="link-card-title">TikTok Barbie</div>
+        <div class="link-card-desc">TikTok Naszej Zastępczyni Lidera Barbie Frugo.</div>
+        <div class="link-card-arrow">Wejdź →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Street<span>Kings</span></div>
+  <div class="footer-tagline">MajesticRP &bull; Los Santos &bull; Rodzina ponad wszystkim</div>
+  <div class="footer-sep"></div>
+  <div class="footer-copy">&copy; 2025 Street Kings. Wszelkie prawa zastrzeżone.</div>
+</footer>
+
+<!-- MUSIC TOGGLE -->
+<button id="music-btn" title="Muzyka"></button>
+<audio id="bg-music" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
